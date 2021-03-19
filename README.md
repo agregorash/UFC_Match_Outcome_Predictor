@@ -9,10 +9,15 @@ When making commits to the main branch team members are responsible for communic
 
 #### Roles & Expectations
 Roles have been randomly assigned and are listed below:
+
 **--Week 1--**
+
 **Repository**: Andrew Gregorash
+
 **Machine Learning Model**: Mattie Jordan
+
 **Database**: Priti Islam
+
 **Technology**: Cesar Ozuna
 
 Each member is expected to complete their assigned work to the 'Mastery' standard for each section of the project, outlined in the rubric and found in the [Guidelines](https://github.com/agregorash/final_project/blob/main/Guidelines/Module%2B20%2B-Project%2BRubrics%2B-%2BSegment%2B1.pdf) folder of this repository.
