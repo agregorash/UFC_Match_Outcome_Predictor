@@ -20,7 +20,7 @@ UFC enthusiasts typically use bets and odds to favour who will win a fight. We t
 
 ### Resources
 
-Through a Kaggle search we identified a robust dataset with 4,567 fight records dating from 3/21/2010- 2/6/2021. 
+Through a Kaggle search we identified a robust dataset containing 137 variables pertaining to 4,567 fight records dating from 3/21/2010- 2/6/2021 
 
 **- Data Sources:** [most-recent-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/most-recent-event.csv), [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv), [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv)
 
