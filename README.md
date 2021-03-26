@@ -8,15 +8,15 @@ UFC enthusiasts typically use bets and odds to favour who will win a fight. We t
 
 ### Questions we hope to answer with data:
 
-**1. Q1**
+**1. Top 1-5 metrics that contribute to winning**
 
-**2. Q2**
+**2.  Which of the 5 metrics carry more weight than the other**
 
-**3. Q3**
+**3. Do these metrics differ according to weight class?**
 
-**4. Q4**
+**4. Do win streaks predict necessarily a higher chance of winning?**
 
-**5. Q5**
+**5. What is the optimal win streak that best predicts a win?**
 
 ### Resources
 
