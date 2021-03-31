@@ -1,4 +1,3 @@
--- Create table for UFC_DB update 3/27/21
 CREATE TABLE master (
 	ID int NOT NULL primary key,
 	R_fighter VARCHAR (60) NOT NULL,
