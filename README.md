@@ -18,7 +18,6 @@ We will be analyzing data with various machine learning algorithms to predict fi
 
 **5. Do the number of win streaks necessarily predict a higher chance of winning?**
 
-Alt-H1
 ## Project Details
 
 #### Data Exploration Phase
