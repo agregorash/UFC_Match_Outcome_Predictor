@@ -22,26 +22,28 @@ We will be analyzing data with various machine learning algorithms to predict fi
 
 #### Data Exploration Phase
 
-Differences in the average accuracy of takedowns taking place between fighters were calculated by using the following function: “Blue corner score minus (-) Red corner score” where a negative score actually favors the Red corner fighter.
+* Differences in the average accuracy of takedowns taking place between fighters were calculated by using the following function: “Blue corner score minus (-) Red corner score” where a negative score actually favors the Red corner fighter.
 
-Exploring historical data of past matchups in the UFC for past multiple years, it was found that the great majority of the time, the fighter in the red corner has a slightly greater chance as the victor in a match-up
+* Exploring historical data of past matchups in the UFC for past multiple years, it was found that the great majority of the time, the fighter in the red corner has a slightly greater chance as the victor in a match-up.
 
 #### Analysis Phase 
+
+* Machine Learning Models and Why..
 
 
 ## Resources
 
 Through a Kaggle search we identified a robust dataset containing 137 variables pertaining to 4,566 fight records dating from 3/21/2010- 2/6/2021. 
 
-**- Data Sources** [most-recent-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/most-recent-event.csv), [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv), [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv)
+**- Data Sources:** [most-recent-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/most-recent-event.csv), [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv), [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv)
 
-**- Technologies Used**
+**- Technologies Used:**
 - **Data Cleaning and Analysis:** Python and Pandas used for data scrubbing and for performing exploratory data analysis
 - **Database Storage:** PgAdmin to manage PostgresSQL and will integrate D3, HTML & JSS to display the data
 - **Machine Learning:** Numpy and Pandas data wrangling libraries along with Seaborn & Scikit-Learn/ our training and testing setup is train test split sklearn.
 - **Dashboard:** Tableau, Google Slides, Python and Pandas, Seaborn, MatPlotLib
 
-## Communication Protocols
+## Team Communication Protocols
 
 Team has established a communication line through a team slack channel.  Group meetings will occur through zoom weekly, one hour before TA office hours ( 06:00PM Friday, 11:00AM Saturday & Sunday), in addition to designated class hours on Tuesday and Thursday.
 When making commits to the main branch team members are responsible for communicating with the team through the slack channel what they are commiting and whether there are any connections being made to established working code.  If there are connections being made to existing code, the team member attempting to add code is responsible for reaching another team member to double check work, preferably the team member who had added the established code, to ensure there are no conflicts.
