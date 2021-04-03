@@ -29,7 +29,7 @@ Exploring historical data of past matchups in the UFC for past multiple years, i
 #### Analysis Phase 
 
 
-### Resources
+## Resources
 
 Through a Kaggle search we identified a robust dataset containing 137 variables pertaining to 4,566 fight records dating from 3/21/2010- 2/6/2021. 
 
@@ -41,7 +41,7 @@ Through a Kaggle search we identified a robust dataset containing 137 variables 
 - **Machine Learning:** Numpy and Pandas data wrangling libraries along with Seaborn & Scikit-Learn/ our training and testing setup is train test split sklearn.
 - **Dashboard:** Tableau, Google Slides, Python and Pandas, Seaborn, MatPlotLib
 
-### Communication Protocols
+## Communication Protocols
 
 Team has established a communication line through a team slack channel.  Group meetings will occur through zoom weekly, one hour before TA office hours ( 06:00PM Friday, 11:00AM Saturday & Sunday), in addition to designated class hours on Tuesday and Thursday.
 When making commits to the main branch team members are responsible for communicating with the team through the slack channel what they are commiting and whether there are any connections being made to established working code.  If there are connections being made to existing code, the team member attempting to add code is responsible for reaching another team member to double check work, preferably the team member who had added the established code, to ensure there are no conflicts.
