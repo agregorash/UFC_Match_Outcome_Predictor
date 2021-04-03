@@ -28,9 +28,12 @@ We will be analyzing data with various machine learning algorithms to predict fi
 
 * Exploring historical data of past matchups in the UFC for past multiple years, it was found that the great majority of the time, the fighter in the red corner has a slightly greater chance as the victor in a match-up.
 
-#### Analysis Phase 
+#### Analysis Phase (Andrew to populate below)
 
-* Machine Learning Models and Why..
+* Description of preliminary data preprocessing
+* Description of preliminary feature engineering and preliminary feature selection, including their decision- making process
+* Description of how data was split into training and testing sets
+* Explanation of model choice, including limitations and benefits
 
 ![image_2](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_2.png)
 
