@@ -18,6 +18,9 @@ We will be analyzing data with various machine learning algorithms to predict fi
 
 **5. Do the number of win streaks necessarily predict a higher chance of winning?**
 
+Alt-H1
+## Project Details
+
 #### Data Exploration Phase
 
 Differences in the average accuracy of takedowns taking place between fighters were calculated by using the following function: “Blue corner score minus (-) Red corner score” where a negative score actually favors the Red corner fighter.
