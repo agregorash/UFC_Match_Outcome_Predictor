@@ -32,6 +32,7 @@ We will be analyzing data with various machine learning algorithms to predict fi
 
 * Machine Learning Models and Why..
 
+![image_2](hhttps://github.com/agregorash/final_project/blob/priis/x/seg2/image_2.png)
 
 ## Resources
 
