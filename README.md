@@ -18,6 +18,14 @@ We will be analyzing data with various machine learning algorithms to predict fi
 
 **5. Do the number of win streaks necessarily predict a higher chance of winning?**
 
+#### Data Exploration Phase
+
+Differences in the average accuracy of takedowns taking place between fighters were calculated by using the following function: “Blue corner score minus (-) Red corner score” where a negative score actually favors the Red corner fighter.
+
+Exploring historical data of past matchups in the UFC for past multiple years, it was found that the great majority of the time, the fighter in the red corner has a slightly greater chance as the victor in a match-up
+
+#### Analysis Phase 
+
 
 ### Resources
 
