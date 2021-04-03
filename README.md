@@ -18,7 +18,7 @@ We will be analyzing data with various machine learning algorithms to predict fi
 
 **5. Do the number of win streaks necessarily predict a higher chance of winning?**
 
-![image_1](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_1.png)
+![image_1](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_1.png | width=100)
 
 ## Project Details
 
