@@ -30,13 +30,13 @@ def df2postgres(df):
     url = 'postgresql://{}:{}@{}:{}/{}'
     url = url.format(params["user"], params["password"], params["host"], params["port"], "ufcDatabaseseg2")
     conn = create_engine(url)
-    df.to_sql(name='schema2tableseg2', con=conn, if_exists='replace', index=True, chunksize=10)
+    df.to_sql(name='ufcBasicTable', con=conn, if_exists='replace', index=False, chunksize=10)
 
     return conn
 
 #db = MyDB()
 #db.create_new_db("ufcDatabaseseg2TEST")
-df = pd.read_csv("Resources/upcoming-event-processed-seg2.csv")
+df = pd.read_csv("../final_project/Resources/na_filled.csv")
 con = df2postgres(df)
 #retrievedata = con.execute("select * from schema2tableseg2 limit 5")
 #print(retrievedata.fetchall())
