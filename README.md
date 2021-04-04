@@ -45,10 +45,9 @@ For our improved model we decided to compare the results between a Random Forest
 
 #### Database
 
-In Visual Studio Code, Python is used to create connections from the processed data files. With SQLAlchemy multiple database [engines](https://github.com/agregorash/final_project/commit/5226eb402790633a7b0fd2d98c887178e139bd60) are run in postgres. 
-From these databases we have created tables in PGAdmin. 
-For comparison of data two of these databases are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin. 
-
+In Visual Studio Code, using the SQLalchemy library within Python to create a Postgres database [engine](https://github.com/agregorash/final_project/commit/5226eb402790633a7b0fd2d98c887178e139bd60) and make connections and create queries within PGAdmin. 
+From this database we have created tables in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py) and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py). 
+For comparison of data of different fighter stats these two tables, Original and Master are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as fighter comparisons.
 
 ## Resources
 
