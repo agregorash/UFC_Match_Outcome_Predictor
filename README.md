@@ -66,7 +66,7 @@ Roles have been randomly assigned and are listed below:
 
 ![image (2)](https://github.com/agregorash/final_project/blob/main/Guidelines/image%20(2).png)
 
-Each member is expected to complete their assigned work at the 'Mastery' standard for each section of the project, outlined in the rubric and found in the [Guidelines](https://github.com/agregorash/final_project/blob/main/Guidelines/Module%2B20%2B-Project%2BRubrics%2B-%2BSegment%2B1.pdf) folder of this repository.
+Each member is expected to complete their assigned work at the 'Mastery' standard for each section of the project, outlined in the rubric and found in the [Guidelines](https://github.com/agregorash/final_project/blob/main/Guidelines/Module%2B20%2B-Full%2BRubric_Final%2BProject.pdf) folder of this repository.
 
 Once a member has finished their work for each section they are expected to reach out to the other team members and offer to help, as workloads will vary section to section, ensuring that everyone is contributing equally.
 
