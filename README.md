@@ -43,6 +43,13 @@ For our improved model we decided to compare the results between a Random Forest
 
 ![image_2](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_2.png)
 
+#### Database
+
+In Visual Studio Code, Python is used to create connections from the processed data files. With SQLAlchemy multiple database [engines](https://github.com/agregorash/final_project/commit/5226eb402790633a7b0fd2d98c887178e139bd60) are run in postgres. 
+From these databases we have created tables in PGAdmin. 
+For comparison of data two of these databases are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin. 
+
+
 ## Resources
 
 Through a Kaggle search we identified a robust dataset containing 137 variables pertaining to 4,566 fight records dating from 3/21/2010- 2/6/2021. 
