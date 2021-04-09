@@ -67,14 +67,48 @@ In Visual Studio Code, we used the SQLalchemy library within Python to create a 
 From this database we have created tables in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py) and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py). 
 For comparison of data of different fighter stats these two tables, Original and Master are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as fighter comparisons.
 
-#### Roles & Expectations
-
-Roles have been randomly assigned and are listed below:
-
-![image (2)](https://github.com/agregorash/final_project/blob/main/Guidelines/image%20(2).png)
-
-Each member is expected to complete their assigned work at the 'Mastery' standard for each section of the project, outlined in the rubric and found in the [Guidelines](https://github.com/agregorash/final_project/blob/main/Guidelines/Module%2B20%2B-Full%2BRubric_Final%2BProject.pdf) folder of this repository.
-
-Once a member has finished their work for each section they are expected to reach out to the other team members and offer to help, as workloads will vary section to section, ensuring that everyone is contributing equally.
+#### Results
+![cm.PNG](https://github.com/agregorash/final_project/blob/main/Resources/cm.PNG)
+```
+[(0.09371278924756822, 'sig_str_landed_bout_diff'),
+ (0.07322299039122629, 'ev_diff'),
+ (0.06649627355115442, 'odds_diff'),
+ (0.05467294529755924, 'tot_str_landed_bout_diff'),
+ (0.04309730671872242, 'sig_str_pct_bout_diff'),
+ (0.041293308302487015, 'tot_str_attempted_bout_diff'),
+ (0.03981271071059609, 'sig_str_dif'),
+ (0.038691324197812044, 'avg_td_dif'),
+ (0.03792105149725804, 'pass_bout_diff'),
+ (0.03312924027637572, 'age_dif'),
+ (0.0318583831513803, 'sig_str_attempted_bout_diff'),
+ (0.031366939727302395, 'avg_sub_att_dif'),
+ (0.030977152153706743, 'total_round_dif'),
+ (0.03053441075092353, 'reach_dif'),
+ (0.026207058330942615, 'height_dif'),
+ (0.025897685861511234, 'kd_bout_diff'),
+ (0.024335036416857133, 'avg_sig_str_pct_diff'),
+ (0.02290230179793294, 'loss_dif'),
+ (0.022780723959308514, 'td_pct_bout_diff'),
+ (0.02245627665762514, 'td_landed_bout_diff'),
+ (0.021917345103222123, 'sub_attempts_bout_diff'),
+ (0.020848136817350923, 'win_dif'),
+ (0.019330181830940606, 'longest_win_streak_dif'),
+ (0.017138135156105915, 'win_by_Decision_Unanimous_diff'),
+ (0.016860588676356744, 'ko_dif'),
+ (0.015556149540612775, 'sub_dif'),
+ (0.015405355453385393, 'win_streak_dif'),
+ (0.014421074078504377, 'Stance_diff'),
+ (0.013423505705208245, 'lose_streak_dif'),
+ (0.01210350529804968, 'td_attempted_bout_diff'),
+ (0.0115495521520556, 'win_by_Decision_Split_diff'),
+ (0.010019448579594636, 'total_title_bout_dif'),
+ (0.0054070386721871465, 'better_rank_enc'),
+ (0.0035116495422187755, 'rev_bout_diff'),
+ (0.003130775171274207, 'win_by_TKO_Doctor_Stoppage_diff'),
+ (0.002803076296398146, 'win_by_Decision_Majority_diff'),
+ (0.0027666052721854735, 'title_bout'),
+ (0.0024419676560992133, 'draw_diff'),
+ (0.0, 'avg_TD_pct_diff')]
+```
 
 
