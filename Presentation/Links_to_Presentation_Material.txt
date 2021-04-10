@@ -1,5 +1,5 @@
-1. Link to Tableau--Dashboard Story
-https://public.tableau.com/views/UFC_16170959562780/UFCPredictor?:language=en&:display_count=y&:origin=viz_share_link
+1. New Link to Tableau--Dashboard Story
+https://public.tableau.com/views/UFC_StoryV1/Story1?:language=en&:display_count=y&:origin=viz_share_link
 
 2. Link to Google Slide--Storyboard Presentation
 https://docs.google.com/presentation/d/1ngIm2IFTypdpNNdSDeCZQoclMvqWImkwwEtEFf8g_Rw/edit?usp=sharing
