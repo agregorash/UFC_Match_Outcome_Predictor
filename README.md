@@ -111,6 +111,32 @@ For comparison of data of different fighter stats these two tables, Original and
  (0.0, 'avg_TD_pct_diff')]
 ```
 ## Visualization
+Through Google Slides, you will find our final presentation.
+[Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
+
+Through Tableau Public, you will find a summary of our results, answering the 5 questions we sought to answer from the inception of this project. 
 [Tableau](https://public.tableau.com/authoring/UFC_StoryV3/Dashboard1#1)
 
-[Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
+### Answers to the Questions we hope to answer with data:
+
+**1. What are the top 5 fighter metrics that contribute to winning a UFC match?**
+* Average number of knockdowns per fight
+* Significant strikes per fight:  Strikes at a distance and power strikes in the clinch and on the ground.
+* Betting Odds:  Human probability statistic made by a leading betting company or odds compiler
+* Payout:  The fighter that has the established higher financial incentive or payout for winning 
+* Average number of guard passes in a fight:  On the ground which the fighter that has a statistically better chance at entering a more dominant position (normally accomplished using wrestling or brazilian jiu jitsu techniques)
+
+**2. Which of the fighter metrics carry more weight than the others?**
+Average number of knockdowns per fight:  This fighter is known for statistically knocking down his opponent the most using significant strikes.
+
+**3. How much do biometric physical factors, i.e. age, height, weight, affect the outcome of the match?**
+Since significant strikes are the 2nd most important contributing factor a fighter's reach benefits his ability to deal these significant strikes from a distance
+
+**4. Does having a higher rank predict the outcome?**
+Having a higher rank does increase the betting odd which is the 3rd significant factor to predict the outcome.
+
+**5. Do the number of win streaks necessarily predict a higher chance of winning?**
+Win streaks are a top 15 contributing factor but fall short of top 5.
+
+
+
