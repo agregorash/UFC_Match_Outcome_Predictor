@@ -115,7 +115,7 @@ Through Google Slides, you will find our final presentation.
 [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
 
 Through Tableau Public, you will find a summary of our results, answering the 5 questions we sought to answer from the inception of this project. 
-[Tableau](https://public.tableau.com/authoring/UFC_StoryV3/Dashboard1#1)
+[Tableau Public](https://public.tableau.com/authoring/UFC_StoryV3/Dashboard1#1)
 
 ### Answers to the Questions we hope to answer with data:
 
