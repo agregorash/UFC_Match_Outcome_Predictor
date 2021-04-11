@@ -112,3 +112,5 @@ For comparison of data of different fighter stats these two tables, Original and
 ```
 ## Visualization
 [Tableau](https://public.tableau.com/authoring/UFC_StoryV3/Dashboard1#1)
+
+[Google Slides](https://public.tableau.com/authoring/UFC_StoryV3/Dashboard1#1https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
