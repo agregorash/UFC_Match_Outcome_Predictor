@@ -110,5 +110,5 @@ For comparison of data of different fighter stats these two tables, Original and
  (0.0024419676560992133, 'draw_diff'),
  (0.0, 'avg_TD_pct_diff')]
 ```
-
+## Visualization
 [Tableau](https://public.tableau.com/authoring/UFC_StoryV3/Dashboard1#1)
