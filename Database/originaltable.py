@@ -24,7 +24,6 @@ class MyDB(object):
         self.engine = create_engine(url, client_encoding='utf8')
         if not database_exists(self.engine.url):
             create_database(self.engine.url)
-        # print(database_exists(engine.url))
 
 def df2postgres(df):
     url = 'postgresql://{}:{}@{}:{}/{}'
@@ -34,9 +33,5 @@ def df2postgres(df):
 
     return conn
 
-#db = MyDB()
-#db.create_new_db("ufcDatabaseseg2TEST")
 df = pd.read_csv("../final_project/Resources/na_filled.csv")
 con = df2postgres(df)
-#retrievedata = con.execute("select * from schema2tableseg2 limit 5")
-#print(retrievedata.fetchall())
