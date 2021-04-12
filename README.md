@@ -1,5 +1,8 @@
 # Final Project -- UFC Match Outcome Predictor
 
+![Alt Text](https://media.giphy.com/media/pAYdyGQK9lhjuD8D5H/giphy.gif)
+
+
 ## Overview
 
 Gambling and "The Fight Game" have always gone hand in hand.  There are countless analysts that make a living off of predicting fight outcomes based on the eye test or on data that has no proven correlation to actual wins. Even worse, the casual fan is typically basing their predictions on the most basic statistics provided by the broadcast during the "tale of the tape" introduction, i.e. heights, weight, record, rank, ect.
