@@ -73,6 +73,9 @@ From this database we have created tables two in PGAdmin named [Original](https:
 For comparison of data of different fighter stats these two tables, Original and Master are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as [fighter comparisons](https://github.com/agregorash/final_project/blob/main/Resources/comparison.csv).
 
 #### Results
+
+##### Random Forest Classifier Outcomes
+
 ![cm.PNG](https://github.com/agregorash/final_project/blob/main/Resources/cm.PNG)
 
 ##### Top variables correlated to wins:
