@@ -121,7 +121,7 @@ For comparison of data of different fighter stats these two tables, Original and
  (0.0024419676560992133, 'draw_diff'),
  (0.0, 'avg_TD_pct_diff')]
 ```
-## Visualization
+#### Visualization and Final Results 
 Through Google Slides, you will find our final presentation.
 [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
 
