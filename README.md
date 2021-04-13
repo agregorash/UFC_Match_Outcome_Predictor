@@ -1,4 +1,4 @@
-# Final Project -- UFC Match Outcome Predictor
+# UFC Match Outcome Predictor
 
 
 ## Overview
