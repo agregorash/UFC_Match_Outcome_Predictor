@@ -1,7 +1,5 @@
 # Final Project -- UFC Match Outcome Predictor
 
-![Alt Text](https://media.giphy.com/media/pAYdyGQK9lhjuD8D5H/giphy.gif)
-
 
 ## Overview
 
