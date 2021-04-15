@@ -148,4 +148,11 @@ Having a higher rank does increase the betting odd which is the 3rd significant 
 Win streaks are a top 15 contributing factor but fall short of top 5.
 
 
+### Future Analysis & What we would do differently:
 
+# Test a wider variety of models
+## KNN
+## Decision Tree
+# Test variable correlations to betting payouts
+# Create a fighter database in order to compare potential future matchups
+# Store data in JSON structure
