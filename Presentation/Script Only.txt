@@ -1,0 +1,199 @@
+============================================================================
+[BEGINNING]
+Slide 3
+Priti:
+
+Ladies and Gentlemen.. IT’S TIMEEEEEE!! 
+
+We all love to see a good match. Whether it’s basketball, tennis, gymnastics, or even chess. 
+
+As fans of any sport, you may find yourself trying to predict the outcome of an upcoming match. (CLICK)
+
+(Like many others, the nature of fighting can be very unpredictable. The advantage or the outcome of a fight can change in a split second.. But then again, that is what makes it so interesting! (CLICK))
+
+Slide 4
+So, if we were to witness some of the best UFC fighters go against each other, like.. 
+
+(CLICK) Conor McGregor (CLICK) vs (CLICK)  Francis Ngannou (ninganu)   
+... or…
+(CLICK) Amanda Nunes (CLICK) vs (CLICK) Valentina Shev chenko 
+
+Who would you root for? Place your bets! (CLICK)
+
+Slide 5
+Sport betting is a (CLICK) $155 billion (dollar) industry and fight matches rank among the top in the industry!
+
+(Gambling and “The Fight Game” have always gone hand in hand. There are many analysts that make a living off of predicting fight outcomes based on the eye test or on data that has no proven correlation to actual wins. On the other hand, a casual fan is typically basing their predictions on the most basic statistics that are provided by the broadcast.) 
+
+What would you need to know before placing your bet..? (CLICK)
+
+Slide 6
+Mixed Martial Arts (MMA) fighter statistics involve everything from skill centric values such as wins and significant strikes to physiological measurements such as height and reach. There are over 100 features that can be analyzed before any given fight.. 
+
+So where's the edge? 
+
+Well, my name is Priti, and along with my teammates, Cesar, Andrew, and Mattie..  we are TEAM 3!!
+
+(CLICK) Our goal is to see if there is a way to apply modern machine learning techniques to historical fight data to best understand which statistics, or features, are most relevant in order to find trends and predict the outcomes (win/draw/loss) of each fight. 
+
+So, INTRODUCING… (CLICK) 
+
+Slide 7
+Cesar Greeting:  “Welcome to our “UFC Match Outcome Predictor” presentation.  In the Data Analytics World we all know Data Scientists are king...but what about, hypothetically, in the Octagon?  As Bruce Buffer said it's time to find out” 
+(CLICK)
+
+Slide 9
+Cesar:  “In our quest to get the ‘W’, we aspire to harness the power of data science to help us win by answering the following questions.” (CLICK)
+
+Slide 10
+Cesar:  
+“What?  To use data science to formulate an educated prediction on the winner of a fight”
+“Why?  Thats easy...Because we actually are die-hard fans!”
+“Where?  UFC provided the fight data via a collection of datasets found in Kaggle”
+(CLICK)
+
+Slide 11
+Cesar:  “Here are the 5 questions we plan on answering by the end of the presentation:
+
+1.  What are the top 5 fighter metrics that contribute to winning a UFC match?
+ 
+2.  Which of the fighter metrics carry more weight than the others?
+
+3.  How much do biometric physical factors, i.e. age, height & weight affect the outcome of the match?
+
+4. Does having a higher rank predict the outcome?
+
+5. Do the number of win streaks necessarily predict a higher chance of winning?”
+(CLICK)
+
+Slide 12
+Cesar:  “Handing over to Priti”
+
+Priti: “In order to answer these questions, we decided to use a PostgresSQL database to house our data. For the preprocessing and modeling stages, we utilized Jupyter Notebooks, where we scripted in Python, along with the Pandas and SciKit-Learn libraries. 
+
+As for the analysis and visualizations, we used Google Slides and Tableau Public.. which you will get a glimpse into later in this presentation. (CLICK)
+
+Interactive Elements --
+Chart with label brushing to allow for automatic appearance of an identifying label when cursor hovers over a particular element 
+Table with filters to see side by side comparison of fighter features
+Heat map to show intensity to showcase intensity of fighter statistics against one another”
+(CLICK)
+
+Slide 13
+Priti:  “To get started, we pulled a robust dataset from Kaggle. With this data, we were able to analyze 4,566 UFC fights dating from March of 2010 to February of 2021. This data includes 1,286 fighters and their previous fight metrics. These metrics include 137 different variables or features. So let’s get started and build the database - handing it over to you, Mattie.“
+(CLICK)
+
+Slide 14
+The Database engine is created in python using sqlalchemy. The data pulled from the Kaggle website was previously processed and molded into a clean dataset from which to read into this database creator.  This data is retrieved and executed into relational database manager pgAdmin to use the management tool PostgresSQL. 
+(CLICK)
+Here** our processed data read into two separate tables; one called Original data and the other called Master data. Both of which were created in python and imported into pgAdmin.
+Each of these focus on the two main categories we find influence match outcomes. The great question if biometric factors; seen in Original data, or skills of fighter metrics; in Master data hold the greatest influences. Some details of the above, R_fighter and B_fighter are categorized as varchars with 30 to hold names of the most common sizes.  Age and weight values as well as the significant strikes, odds of the underdog or favorite fighter, total strikes landed and significant strike percent values are labeled as integers because they are whole value numbers. Floating variables used above have more precise numerical values that include a decimal place in their data. These include height and reach of each fighter measured in centimeters. 
+These two categories are Joined together with pgAdmin Query tools and exported as a UFC fighter_comparison csv file.
+(CLICK)
+(1:45)
+
+Slide 15
+There are a couple tools used to create and connect a database in python. Sqlalchemy is used to create the engine and database. Pandas is used as pd to read in the csvs. 
+To create this database the params are set to connect the postgresql user, password, host, port, and new database. Then the engine creates that database. 
+Here a connection is created between that new database and the setup of where data will be imported. 
+Through pandas our csv data is imported in and read into this new postgres dataframe. 
+This action is performed with two separate python files, one coded for the Original data table creation using pandas reading the cleaned and na filled csv, and the second python file specialized for the Master data table reading in the preprocessed data csv. I wanted to note that the same database connection is used in both these instances so there are two separate tables, Original and Master each reading in their own csvs, living under the same database header in pgAdmin as two tables. Here the view was created to see the join made between Original and Master. 
+Something we could have done differently is instead of cleaning and breaking our largest kaggle data file into two separate files is to pull different csvs of data from a a different source.
+(CLICK)
+
+Slide 16
+Cesar: “Thank you Mattie…….Exploring the data we found that not all data is usable in its original state.  We would need to devise a way to provide the machine learning model, data, ideal for determining winning contributing factors.”
+(CLICK)
+
+Slide 17
+Cesar:  “We compared the following 4 models to see which model best fits our data, research requirements and structure.
+K-Nearest Neighbors
+Random Forest
+Logistic Regression
+and Decision Trees”
+(CLICK)
+
+Slide 18
+Cesar:  “We let Einstein inspire us with the following quote (CLICK)...
+Fundamentally, a baseline is a model that is both simple to set up and has a reasonable chance of providing decent results.”
+(CLICK)
+
+Slide 19
+Cesar:  
+“Just like you can’t be a good fighter without a solid base or foundation from which to work from, you can’t have a good machine learning model without first creating a baseline.
+When trying to classify structured data or natural language, logistic regressions will usually give you quick, solid results.
+Our simple model, without removing null values, can predict winners with (CLICK)  ~ 51.75% accuracy
+Since nobody is truly satisfied with a 50/50 chance of winning, we had some tweaking to do to improve the accuracy of the baseline even before comparing other new models.”
+(CLICK)
+
+Slide 21
+Cesar:  “In the end we stuck with the Neural Network and Random Forest Models due to their ability to handle large datasets the best…...And now handing-over to Andrew”
+(CLICK)
+
+Slide 22
+The phases for our Machine Learning analysis can be broken into 3 phases.
+Each phase has a few questions that it looks to answer
+
+Slide 23
+The simple model does in fact prove the variables correlate to wins.  These are the variables that have a 25% or higher correlation
+
+Slide 24
+The data preprocessing phase has 4 steps, heres what we did and why
+
+Slide 25
+We compared RF and NN models with the above specs.  In the spirit of simplicity we decided to go with RF since it is a little easier to implement.
+
+From there we were able to find the top 5 correlating variables to wins with our new cleaned data
+
+Slide 26
+We used the RF model trained on our large original dataset on a set of 11 fights unseen to the model.  It performed slightly worse but we can confidently say that it is not overfit with this small sample size.  Here are the models predictions next to the actual results.   Went 8/11
+
+Slide 27
+
+Cesar:  “Since a picture is worth a thousand words take it away Priti”
+( STOP PRESENTING)
+
+Priti:  (START PRESENTING)
+
+Cesar (once Priti starts presenting (CLICK))
+
+Slide 33
+Cesar: “Thank you, Priti for answering the first of 5 questions. On to the next.. 
+(CLICK)
+
+Slide 34
+Cesar:  
+“2. Which of the fighter metrics carry more weight than the others?
+The fighter with the highest average number of significant strikes landed per fight metric typically will be your winner.
+
+3. How much do biometric physical factors, i.e. age, height and weight, affect the outcome of the match?
+Since a high volume of accurate significant strikes is the most important contributing factor, a fighter's reach benefits his or her ability to deal these significant strikes from a distance the most.
+
+4. Does having a higher rank predict the outcome?
+Although it was the 3rd significant factor in our simple model, in our refined final model it became the 34th most important contributing factor.  This still leaves it in the upper 25th percentile but not top 5.
+
+5. Do the number of win streaks necessarily predict a higher chance of winning?
+As the 26th most important factor having a win streak unfortunately does not necessarily contribute to you winning your next match.”
+(CLICK)
+
+Slide 35
+
+Cesar:  “Andrew for what else we could have done differently...”
+
+Andrew: 
+In future analyses, we could test a wider variety of models
+We could also test variables as related to betting payouts 
+Something we might do differently is create a fighter database and store results in JSON structure in order to predict future matchups
+(CLICK)
+
+Slide 36
+Cesar:  
+“Who do you think will win this next upcoming UFC match?......Now that you know what it takes to win, time to throw in your bets!”
+… … … …
+… … … ...
+“THANK YOU!
+
+*mic drop* 
+[END]
+============================================================================
+
