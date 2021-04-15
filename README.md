@@ -154,7 +154,7 @@ Win streaks are a top 15 contributing factor but fall short of top 5.
 ### KNN
 ### Decision Tree
 ## Test variable correlations to betting payouts
-## Create a fighter database in order to compare potential future matchups
 ## Database
+### Create a fighter database in order to compare potential future matchups
 ### Instead of cleaning and breaking our largest kaggle data file into two separate files is to pull different csvs of data from a a different source.
 ### Store data in JSON structure
