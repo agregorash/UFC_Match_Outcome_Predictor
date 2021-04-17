@@ -1,2 +1,0 @@
-SELECT index, "R_fighter", "B_fighter", "R_odds", "B_odds", "R_ev", "B_ev", "Winner", title_bout, no_of_rounds, lose_streak_dif, win_streak_dif, longest_win_streak_dif, win_dif, loss_dif, total_round_dif, total_title_bout_dif, ko_dif, sub_dif, height_dif, reach_dif, age_dif, sig_str_dif, avg_sub_att_dif, avg_td_dif, better_rank
-	FROM public.schema2tableseg2;

@@ -1,4 +1,5 @@
-# Final Project -- UFC Match Outcome Predictor
+# UFC Match Outcome Predictor
+
 
 ## Overview
 
@@ -33,11 +34,10 @@ Through a Kaggle search we identified a robust dataset containing 137 variables 
 **- Data Sources:** [most-recent-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/most-recent-event.csv), [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv), [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv)
 
 **- Technologies Used:**
-- **Data Cleaning and Analysis:** Python and Pandas used for data scrubbing and for performing exploratory data analysis
-- **Database Storage:** PgAdmin to manage PostgresSQL and will integrate D3, HTML & JSS to display the data
-- **Machine Learning:** Numpy and Pandas data wrangling libraries along with Seaborn & Scikit-Learn/ our training and testing setup is train test split sklearn.
-- **Dashboard:** Tableau, Google Slides, Python and Pandas, Seaborn, MatPlotLib
-
+- **Data Cleaning and Analysis:** Python's Pandas package will be used for data scrubbing and for performing exploratory data analysis.
+- **Database Storage:** PgAdmin to manage PostgresSQL.  Connections will be made with SQLalchemy.
+- **Machine Learning:** Python's Scikit-Learn package, specifically the DummyClassifier, RandomForest Classifier, and TensorFlow Keras Sequential models.
+- **Dashboard and Presentation:** Tableau will be used to visualize the results and Google Slides will be used for the presentation.
 ## Project Details
 
 #### Data Exploration Phase
@@ -52,23 +52,32 @@ Through a Kaggle search we identified a robust dataset containing 137 variables 
 * Description of preliminary feature engineering and preliminary feature selection, including their decision- making process
 * Description of how data was split into training and testing sets
 * Explanation of model choice, including limitations and benefits
+* Explanation of changes in model choice
 
-Using the [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv) file, we first wanted to create a baseline classification model [Simple_Model.ipynb](https://github.com/agregorash/final_project/blob/main/ML/Simple_Model.ipynb) in order to establish a benchmark of how well a winner could be predicted without data preprocessing and feature engineering.  Using the Dummy Classifier, which allows us to run the model with null values, the model predicted winners with 51.75% accuracy.
+Using the [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv) file, we first wanted to create a [baseline classification model](https://github.com/agregorash/final_project/blob/main/ML/Simple_Model.ipynb) in order to establish a benchmark of how well a winner could be predicted without data preprocessing and feature engineering.  Using the Dummy Classifier, which allows us to run the model with null values, the model predicted winners with 51.75% accuracy.
 
-We then set out to create a model that would perform better than our baseline model, by first preprocessing the data and implementing feature engineering- [data_preprocessing.ipynb](https://github.com/agregorash/final_project/blob/main/ML/data_preprocessing.ipynb).  In this dataset we were dealing with 137 variables many of which contained a significant amount of null values.  In order to ensure key variables were not eliminated, we first encoded the winning column and ran a correlation function in pandas to see which variables most correlated to winners.  After that, we recognized that the majority of our variables were duplicates in a sense- statistics for the Red Corner fighter, and statistics for the Blue Corner figher.  To incresase correlation and concentrate the data, we subtracted all Red Corner statistics from Blue Corner statistics (Blue-Red) and created 'difference' variables.  Then we dropped all variables that were common to both fighters in that fight; such as date, location, weight class, ect.  Looking at the data further we recognized there was a large chunk of variables associated to rankings in a given weight class that contained a significant amount of null values.  After further analysis only one of these rankings columns was pertinent and all the others were dropped.  Then columns with strings were encoded, and false NaN columns were filled with their true value of 0.  Feature engineering and data preprocessing resulted 40 clean and concise variables to be fed into the classification models.
+We then set out to create a model that would perform better than our baseline model, by first [preprocessing the data and implementing feature engineering](https://github.com/agregorash/final_project/blob/main/ML/data_preprocessing.ipynb).  In this dataset we were dealing with 137 variables many of which contained a significant amount of null values.  In order to ensure key variables were not eliminated, we first encoded the winning column and ran a correlation function in pandas to see which variables most correlated to winners.  After that, we recognized that the majority of our variables were duplicates in a sense- statistics for the Red Corner fighter, and statistics for the Blue Corner figher.  To incresase correlation and concentrate the data, we subtracted all Red Corner statistics from Blue Corner statistics (Blue-Red) and created 'difference' variables.  Then we dropped all variables that were common to both fighters in that fight; such as date, location, weight class, ect.  Looking at the data further we recognized there was a large chunk of variables associated to rankings in a given weight class that contained a significant amount of null values.  After further analysis only one of these rankings columns was pertinent and all the others were dropped.  Then columns with strings were encoded, and false NaN columns were filled with their true value of 0.  Feature engineering and data preprocessing resulted 40 clean and concise variables to be fed into the classification models.
 
-For our improved model we decided to compare the results between a Random Forest classifier and a Deep Neural Network[ufc_RF_vs_NN.ipynb](https://github.com/agregorash/final_project/blob/main/ML/ufc_RF_vs_NN.ipynb), because we were looking to classify winners with a very large dataset.  We tinkered with different train/test splits but results were best with a standard 25% test split.  The RF Classifier resulted in 78% accuracy while the Deep NN resulted in 76% accuracy.  It does not seem that either model was overfit, and they were able to predict winners of the fights with over 75% accuracy.  
+For our improved model we decided to compare the results between a [Random Forest classifier and a Deep Neural Network](https://github.com/agregorash/final_project/blob/main/ML/ufc_RF_vs_NN.ipynb), because we were looking to classify winners with a very large dataset.  We tinkered with different train/test splits but results were best with a standard 25% test split.  The RF Classifier resulted in 78% accuracy while the Deep NN resulted in 77.93% accuracy. Due to the almost identical score, we have decided to choose the Random Forest Classifier, because it is the more simple model.
+
+In order to ensure that our Random Forest Model is not overfit, the model is tested against unseen data- the 11 upcoming fights in the [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv) file.  Results can be seen in the  [RF_upcoming.ipynb](https://github.com/agregorash/final_project/blob/main/ML/RF_upcoming.ipynb) file. The upcoming fights were put through the data preprocessing algorithms, previously unknown results were manually entered, and fed into the Random Forest Classifier which was trained on the initial data.  The model predicted results from the unseen dataset with 72% accuracy, which is slightly lower than the 75% accuracy target, but with such a small sample size we can determine the model is not overfit.
 
 ![image_2](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_2.png)
 
 #### Database
 
 In Visual Studio Code, we used the SQLalchemy library within Python to create a Postgres database [engine](https://github.com/agregorash/final_project/commit/5226eb402790633a7b0fd2d98c887178e139bd60) and make connections and create queries within PGAdmin. 
-From this database we have created tables in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py) and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py). 
+From this database we have created tables two in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py) and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py). 
 For comparison of data of different fighter stats these two tables, Original and Master are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as [fighter comparisons](https://github.com/agregorash/final_project/blob/main/Resources/comparison.csv).
 
 #### Results
+
+##### Random Forest Classifier Outcomes
+
 ![cm.PNG](https://github.com/agregorash/final_project/blob/main/Resources/cm.PNG)
+
+##### Top variables correlated to wins:
+
 ```
 [(0.09371278924756822, 'sig_str_landed_bout_diff'),
  (0.07322299039122629, 'ev_diff'),
@@ -110,7 +119,7 @@ For comparison of data of different fighter stats these two tables, Original and
  (0.0024419676560992133, 'draw_diff'),
  (0.0, 'avg_TD_pct_diff')]
 ```
-## Visualization
+#### Visualization and Final Results 
 Through Google Slides, you will find our final presentation.
 [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
 
@@ -139,4 +148,13 @@ Having a higher rank does increase the betting odd which is the 3rd significant 
 Win streaks are a top 15 contributing factor but fall short of top 5.
 
 
+# Future Analysis & What we would do differently:
 
+## Test a wider variety of models
+* KNN
+* Decision Tree
+## Database
+* Create a fighter database in order to compare potential future matchups
+* Instead of cleaning and breaking our largest kaggle data file into two separate files, we could have pulled different CSV's from an alternate source.
+* Store data in JSON structure
+## Test variable correlations to betting payouts
