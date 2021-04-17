@@ -67,7 +67,7 @@ In order to ensure that our Random Forest Model is not overfit, the model is tes
 #### Database
 
 In Visual Studio Code, we used the SQLalchemy library within Python to create a Postgres database [engine](https://github.com/agregorash/final_project/commit/5226eb402790633a7b0fd2d98c887178e139bd60) and make connections and create queries within PGAdmin. 
-From this database we have created tables two in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py) and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py). 
+From this database we have created tables two in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py) which focuses more on biometric factors, and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py) which highlights fighter metric skills. 
 For comparison of data of different fighter stats these two tables, Original and Master are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as [fighter comparisons](https://github.com/agregorash/final_project/blob/main/Resources/comparison.csv).
 
 #### Results
