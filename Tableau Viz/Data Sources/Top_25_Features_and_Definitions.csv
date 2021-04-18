@@ -1,0 +1,119 @@
+﻿Name,Metric,Correlation,Definition
+Knockdowns,B_kd_bout,0.363214783,Average number of knockdowns per bout for blue fighter
+Average Accuracy of Significant Strikes Landed,R_sig_str_pct_bout,0.343101711,Average accuracy of significant strikes landed in per bout for red fighter
+Betting Odds,B_odds,0.334925872,Betting odds of blue fighter
+Betting Odds,R_odds,0.32905408,Betting odds of red fighter
+Payout,R_ev,0.311495584,Payout for red fighter
+Payout,B_ev,0.30775815,Payout for blue fighter
+Guard Passes ,B_pass_bout,0.301765468,Average number of guard-passess per bout for blue fighter
+Average Accuracy of Significant Strikes Landed,B_sig_str_pct_bout,0.292131592,Average accuracy of significant strikes landed in per bout for blue fighter
+Knockdowns,R_kd_bout,0.288660277,Average number of knockdowns per bout for red fighter
+Guard Passes ,R_pass_bout,0.286574536,Average number of guard-passess per bout for red fighter
+Total Number of Strikes Landed,R_tot_str_landed_bout,0.285510309,Average total number of strikes landed per bout for red fighter
+Total Number of Strikes Landed,B_tot_str_landed_bout,0.268252651,Average total number of strikes landed per bout for blue fighter
+Significant Strikes Landed,B_sig_str_landed_bout,0.260187165,Average number of significant strikes landed in per bout for blue fighter
+Accuracy of Takedowns Landed,R_td_pct_bout,0.258638181,Average accuracy of takedowns landed in per bout for red fighter
+Average Takedowns Landed,B_td_landed_bout,0.256081243,Average number of takedowns landed in per bout for blue fighter
+Average Takedowns Landed,R_td_landed_bout,0.235190811,Average number of takedowns landed in per bout for red righter
+Accuracy of Takedowns Landed,B_td_pct_bout,0.230603491,Average accuracy of takedowns landed in per bout for blue fighter
+Significant Strikes Landed,R_sig_str_landed_bout,0.229487555,Average number of significant strikes landed in per bout for red fighter
+Women's Strawweight Ranking,B_Women's Strawweight_rank,0.218971935,Weight ranking in the strawweight category for blue women fighter
+Heavyweight Ranking,R_Heavyweight_rank,0.203111221,Weight ranking in the heavyweight category for red fighter
+Women's Bantamweight Ranking,B_Women's Bantamweight_rank,0.190164649,Weight ranking in the bantamweight category for blue women fighter
+Total Number of Strikes Attempted,B_tot_str_attempted_bout,0.18723007,Average total number of strikes attempted per bout for blue fighter
+Number of Submissions Attempted,R_sub_attempts_bout,0.175823269,Average number of submissions attempted per bout for red fighter
+Total Number of Strikes Attempted,R_tot_str_attempted_bout,0.175281019,Average total number of strikes attempted per bout for red fighter
+Welterweight Ranking,B_Welterweight_rank,0.1720879,Weight ranking in the welterweight category for blue ighter
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
+,,,
