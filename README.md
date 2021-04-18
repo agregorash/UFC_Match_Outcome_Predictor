@@ -7,13 +7,13 @@ Gambling and "The Fight Game" have always gone hand in hand.  There are countles
 
 ![tale_of_tape.jpg](https://github.com/agregorash/final_project/blob/main/Resources/tale_of_tape.jpg)
 
-So where is the real edge? 
+So, where is the real edge? 
 
-With the power of data this analysis will uncover the top variables correlated to wins in the largest mixed martial arts organization in the world, the UFC.  In addition, using supervised machine learning this analysis will classify winners with an accuracy of at least 75%.
+With the power of data, this analysis will uncover the top variables correlated to wins in the largest mixed martial arts organization in the world, the UFC.  In addition, using supervised machine learning this analysis will classify winners with an accuracy of at least 75%.
 
 DISCLAIMER: This analysis was formed for educational purposes and should not be used for gambling or financial gain.
 
-### Questions we hope to answer with data:
+## Questions we hope to answer with data:
 
 **1. What are the top 5 fighter metrics that contribute to winning a UFC match?**
 
@@ -34,10 +34,11 @@ Through a Kaggle search we identified a robust dataset containing 137 variables 
 **- Data Sources:** [most-recent-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/most-recent-event.csv), [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv), [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv)
 
 **- Technologies Used:**
-- **Data Cleaning and Analysis:** Python's Pandas package will be used for data scrubbing and for performing exploratory data analysis.
+- **Data Cleaning and Analysis:** Python's Pandas package for data scrubbing and performing exploratory data analysis.
 - **Database Storage:** PgAdmin to manage PostgresSQL.  Connections will be made with SQLalchemy.
 - **Machine Learning:** Python's Scikit-Learn package, specifically the DummyClassifier, RandomForest Classifier, and TensorFlow Keras Sequential models.
-- **Dashboard and Presentation:** Tableau will be used to visualize the results and Google Slides will be used for the presentation.
+- **Dashboard and Presentation:** Tableau to create a dashboard and visualize the results. Google Slides for the final presentation.
+
 ## Project Details
 
 #### Data Exploration Phase
