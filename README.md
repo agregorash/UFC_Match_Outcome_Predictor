@@ -34,7 +34,7 @@ Through a Kaggle search we identified a robust dataset containing 137 variables 
 **- Data Sources:** [most-recent-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/most-recent-event.csv), [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv), [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv)
 
 **- Technologies Used:**
-- **Data Cleaning and Analysis:** Python's Pandas package for data scrubbing and performing exploratory data analysis.
+- **Data Cleaning and Analysis:** Python's Pandas package for data scrubbing and exploratory data analysis.
 - **Database Storage:** PgAdmin to manage PostgresSQL.  Connections will be made with SQLalchemy.
 - **Machine Learning:** Python's Scikit-Learn package, specifically the DummyClassifier, RandomForest Classifier, and TensorFlow Keras Sequential models.
 - **Dashboard and Presentation:** Tableau to create a dashboard and visualize the results. Google Slides for the final presentation.
@@ -43,9 +43,11 @@ Through a Kaggle search we identified a robust dataset containing 137 variables 
 
 #### Data Exploration Phase
 
-* Differences in all statistics for each fight were calculated using the following function: “Blue corner score minus (-) Red corner score” where a negative score actually favors the Red corner fighter.  These calculations were done in order to concentrate the variables and increase their correlation to wins.
+* Differences in all statistics for each fight were calculated using the following function: “(Blue Corner Score) - (Red Corner Score)” where a negative score actually favors the Red corner fighter.  These calculations were done in order to concentrate the variables and increase their correlation to wins.
 
 * Exploring historical data of past matchups in the UFC for past multiple years, it was found that the great majority of the time, the fighter in the red corner has a slightly greater chance as the victor in a match-up.
+
+![Red vs Blue Total Wins](https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Red%20vs%20Blue%20Total%20Wins.png)
 
 #### Machine Learning
 
