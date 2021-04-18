@@ -42,12 +42,14 @@ Through a Kaggle search we identified a robust dataset containing 137 variables 
 ## Project Details
 
 #### Data Exploration Phase
+Exploring the data, we found that not all data is usable in its original state.  We would need to devise a way to provide the machine learning model with data that is ideal for determining winning contributing factors.
 
 * Differences in all statistics for each fight were calculated using the following function: “(Blue Corner Score) - (Red Corner Score)” where a negative score actually favors the Red corner fighter.  These calculations were done in order to concentrate the variables and increase their correlation to wins.
 
 * Exploring historical data of past matchups in the UFC for past multiple years, it was found that the great majority of the time, the fighter in the red corner has a slightly greater chance as the victor in a match-up.
 
 ![Red vs Blue Total Wins](https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Red%20vs%20Blue%20Total%20Wins.png)
+
 *It can be concluded that Red Fighters have a higher (58.6%) chance to win, while Blue Fighters have a lower (41.4%) chance to win. Thus, fighting on the red corner offers a 17% higher chance of winning alone.*
 
 #### Machine Learning
