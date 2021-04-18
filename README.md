@@ -54,11 +54,15 @@ Exploring the data, we found that not all data is usable in its original state. 
 
 #### Machine Learning
 
-* Description of preliminary data preprocessing
-* Description of preliminary feature engineering and preliminary feature selection, including their decision- making process
-* Description of how data was split into training and testing sets
-* Explanation of model choice, including limitations and benefits
-* Explanation of changes in model choice
+- Description of data preprocessing 
+- Description of feature engineering and the feature selection, including the team's decision-making process 
+- Description of how data was split into training and testing sets 
+- Explanation of model choice, including limitations and benefits 
+- Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) 
+- Description of how model was trained (or retrained, if they are using anexisting model) 
+- Description and explanation of model’s confusion matrix, including finalaccuracy score 
+
+Note: If statistical analysis is not included as part of the current analysis, include a description of how it would be included in the next phases of the project.
 
 Using the [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv) file, we first wanted to create a [baseline classification model](https://github.com/agregorash/final_project/blob/main/ML/Simple_Model.ipynb) in order to establish a benchmark of how well a winner could be predicted without data preprocessing and feature engineering.  Using the Dummy Classifier, which allows us to run the model with null values, the model predicted winners with 51.75% accuracy.
 
