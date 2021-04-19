@@ -1,7 +1,6 @@
 # UFC Match Outcome Predictor
 
 ## Overview
-
 Gambling and "The Fight Game" have always gone hand in hand.  There are countless analysts that make a living off of predicting fight outcomes based on the eye test or on data that has no proven correlation to actual wins. Even worse, the casual fan is typically basing their predictions on the most basic statistics provided by the broadcast during the "tale of the tape" introduction, i.e. heights, weight, record, rank, ect.
 
 ![tale_of_tape.jpg](https://github.com/agregorash/final_project/blob/main/Resources/tale_of_tape.jpg)
@@ -27,7 +26,6 @@ DISCLAIMER: This analysis was formed for educational purposes and should not be 
 ![image_1](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_1.png)
 
 ## Resources
-
 Through a Kaggle search we identified a robust dataset containing 137 variables pertaining to 4,566 fight records dating from 3/21/2010- 2/6/2021. 
 
 **- Data Sources:** [most-recent-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/most-recent-event.csv), [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv), [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv)
@@ -52,7 +50,6 @@ Exploring the data, we found that not all data is usable in its original state. 
 *It can be concluded that Red Fighters have a higher (58.6%) chance to win, while Blue Fighters have a lower (41.4%) chance to win. Thus, fighting on the red corner offers a 17% higher chance of winning alone.*
 
 #### Machine Learning
-
 - Description of data preprocessing 
 - Description of feature engineering and the feature selection, including the team's decision-making process 
 - Description of how data was split into training and testing sets 
@@ -74,7 +71,6 @@ In order to ensure that our Random Forest Model is not overfit, the model is tes
 ![image_2](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_2.png)
 
 #### Database
-
 - In Visual Studio Code, we used the SQLalchemy library within Python to create a Postgres database [engine](https://github.com/agregorash/final_project/commit/5226eb402790633a7b0fd2d98c887178e139bd60), where we can make connections and create queries within PGAdmin. 
 - From this database we created two tables in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py), which focuses on biometric factors, and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py), which highlights fight metrics and statistics. 
 - For comparison of data of different fighter statistics, these two tables (Original and Master) are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices, and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as [fighter comparisons](https://github.com/agregorash/final_project/blob/main/Resources/comparison.csv).
@@ -107,11 +103,6 @@ Having a higher rank does increase the betting odd which is the 3rd significant 
 
 **5. Do the number of win streaks necessarily predict a higher chance of winning?**
 Win streaks are a top 15 contributing factor but fall short of top 5.
-
-### Final Presentation
-Through [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1), you cab view our final presentation.
-
-Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins), you will find our dashboard and supporting visuals to help answer our intial probing questions. 
 
 
 ##### Random Forest Classifier Outcomes
@@ -162,7 +153,10 @@ Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhom
  (0.0, 'avg_TD_pct_diff')]
 ```
 
+### Final Presentation
+Through [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1), you cab view our final presentation.
 
+Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins), you will find our dashboard and supporting visuals to help answer our intial probing questions. 
 
 ## Future Analysis & What We Would Do Differently
 - Test a wider variety of machine learning models for best results
