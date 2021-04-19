@@ -50,17 +50,16 @@ Exploring the data, we found that not all data is usable in its original state. 
 *It can be concluded that Red Fighters have a higher (58.6%) chance to win, while Blue Fighters have a lower (41.4%) chance to win. Thus, fighting on the red corner offers a 17% higher chance of winning alone.*
 
 #### Machine Learning
-- Description of data preprocessing 
-- Description of feature engineering and the feature selection, including the team's decision-making process 
-- Description of how data was split into training and testing sets 
-- Explanation of model choice, including limitations and benefits 
-- Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables) 
-- Description of how model was trained (or retrained, if they are using anexisting model) 
-- Description and explanation of model’s confusion matrix, including finalaccuracy score 
+ 
+##### Baseline Model
 
 Using the [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv) file, we first wanted to create a [baseline classification model](https://github.com/agregorash/final_project/blob/main/ML/Simple_Model.ipynb) in order to establish a benchmark of how well a winner could be predicted without data preprocessing and feature engineering.  Using the Dummy Classifier, which allows us to run the model with null values, the model predicted winners with 51.75% accuracy.
 
+##### Data Preprocessing, Feature Engineering
+
 We then set out to create a model that would perform better than our baseline model, by first [preprocessing the data and implementing feature engineering](https://github.com/agregorash/final_project/blob/main/ML/data_preprocessing.ipynb).  In this dataset we were dealing with 137 variables many of which contained a significant amount of null values.  In order to ensure key variables were not eliminated, we first encoded the winning column and ran a correlation function in pandas to see which variables most correlated to winners.  After that, we recognized that the majority of our variables were duplicates in a sense- statistics for the Red Corner fighter, and statistics for the Blue Corner figher.  To incresase correlation and concentrate the data, we subtracted all Red Corner statistics from Blue Corner statistics (Blue-Red) and created 'difference' variables.  Then we dropped all variables that were common to both fighters in that fight; such as date, location, weight class, ect.  Looking at the data further we recognized there was a large chunk of variables associated to rankings in a given weight class that contained a significant amount of null values.  After further analysis only one of these rankings columns was pertinent and all the others were dropped.  Then columns with strings were encoded, and false NaN columns were filled with their true value of 0.  Feature engineering and data preprocessing resulted 40 clean and concise variables to be fed into the classification models.
+
+##### Model Choice and Results
 
 For our improved model we decided to compare the results between a [Random Forest classifier and a Deep Neural Network](https://github.com/agregorash/final_project/blob/main/ML/ufc_RF_vs_NN.ipynb), because we were looking to classify winners with a very large dataset.  We tinkered with different train/test splits but results were best with a standard 25% test split.  The RF Classifier resulted in 78% accuracy while the Deep NN resulted in 77.93% accuracy. Due to the almost identical score, we have decided to choose the Random Forest Classifier, because it is the more simple model.  Find the complete results below in the Confusion Matrix:
 
@@ -73,6 +72,8 @@ The model predictions results were as follows;
 - 579 True Negatives- Red corner fighter was predicted to win correctly
 
 The matrix statistics shows that the model predicts results for the red corner fighter, represented as '1', better than blue corner fighters, represented as '0', across the board. 
+
+##### Modifications and Further Analysis
 
 In order to ensure that our Random Forest Model is not overfit, the model is tested against unseen data- the 11 upcoming fights in the [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv) file.  Results can be seen in the  [RF_upcoming.ipynb](https://github.com/agregorash/final_project/blob/main/ML/RF_upcoming.ipynb) file. The upcoming fights were put through the data preprocessing algorithms, previously unknown results were manually entered, and fed into the Random Forest Classifier which was trained on the initial data.  The model predicted results from the unseen dataset with 72% accuracy, which is slightly lower than the 75% accuracy target, but with such a small sample size we can determine the model is not overfit.
 
