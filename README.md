@@ -80,7 +80,42 @@ In order to ensure that our Random Forest Model is not overfit, the model is tes
 - From this database we created two tables in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py), which focuses on biometric factors, and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py), which highlights fight metrics and statistics. 
 - For comparison of data of different fighter statistics, these two tables (Original and Master) are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices, and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as [fighter comparisons](https://github.com/agregorash/final_project/blob/main/Resources/comparison.csv).
 
-## Results
+## Visualizations and Final Results
+Based on our initial model, the Dummy Classifier, the top 25 variables that carry the strongest correlation to winning can be visualized in the below treemap, where you can see the strongest (also the most dense in color) at the top left and the weakest on the bottom right. (Please note: you can interact by hovering over each block to find the the definition of each variable and its correlation metric in the Tableau Dashboard.)
+
+![Top 25 Tree Map](https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Top%2025%20Tree%20Map.png)
+
+#### Answers to the "Questions we hope to answer with data"
+Again, based on our intial model, the Dummy Classifier, the following can be concluded:
+
+**1. What are the top 5 fighter metrics that contribute to winning a UFC match?**
+* Average number of knockdowns per fight
+* Significant strikes per fight:  Strikes at a distance and power strikes in the clinch and on the ground.
+* Betting Odds:  Human probability statistic made by a leading betting company or odds compiler
+* Payout:  The fighter that has the established higher financial incentive or payout for winning 
+* Average number of guard passes in a fight:  On the ground which the fighter that has a statistically better chance at entering a more dominant position (normally accomplished using wrestling or brazilian jiu jitsu techniques)
+
+![Top 5 Bar Graph] (https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Top%205%20Bar%20Graph.png)
+
+**2. Which of the fighter metrics carry more weight than the others?**
+Average number of knockdowns per fight:  This fighter is known for statistically knocking down his opponent the most using significant strikes.
+
+**3. How much do biometric physical factors, i.e. age, height, weight, affect the outcome of the match?**
+Since significant strikes are the 2nd most important contributing factor a fighter's reach benefits his ability to deal these significant strikes from a distance
+
+**4. Does having a higher rank predict the outcome?**
+Having a higher rank does increase the betting odd which is the 3rd significant factor to predict the outcome.
+
+**5. Do the number of win streaks necessarily predict a higher chance of winning?**
+Win streaks are a top 15 contributing factor but fall short of top 5.
+
+#### Final Presentation
+Through Google Slides, you will find our final presentation.
+[Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
+
+Through Tableau Public, you will find a summary of our results and visuals to support the 5 questions we sought to answer from the inception of this project. 
+[Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins)
+
 
 ##### Random Forest Classifier Outcomes
 
@@ -129,36 +164,10 @@ In order to ensure that our Random Forest Model is not overfit, the model is tes
  (0.0024419676560992133, 'draw_diff'),
  (0.0, 'avg_TD_pct_diff')]
 ```
-#### Visualization and Final Results 
-Through Google Slides, you will find our final presentation.
-[Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
-
-Through Tableau Public, you will find a summary of our results, answering the 5 questions we sought to answer from the inception of this project. 
-[Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins)
-
-#### Answers to the Questions we hope to answer with data:
-
-**1. What are the top 5 fighter metrics that contribute to winning a UFC match?**
-* Average number of knockdowns per fight
-* Significant strikes per fight:  Strikes at a distance and power strikes in the clinch and on the ground.
-* Betting Odds:  Human probability statistic made by a leading betting company or odds compiler
-* Payout:  The fighter that has the established higher financial incentive or payout for winning 
-* Average number of guard passes in a fight:  On the ground which the fighter that has a statistically better chance at entering a more dominant position (normally accomplished using wrestling or brazilian jiu jitsu techniques)
-
-**2. Which of the fighter metrics carry more weight than the others?**
-Average number of knockdowns per fight:  This fighter is known for statistically knocking down his opponent the most using significant strikes.
-
-**3. How much do biometric physical factors, i.e. age, height, weight, affect the outcome of the match?**
-Since significant strikes are the 2nd most important contributing factor a fighter's reach benefits his ability to deal these significant strikes from a distance
-
-**4. Does having a higher rank predict the outcome?**
-Having a higher rank does increase the betting odd which is the 3rd significant factor to predict the outcome.
-
-**5. Do the number of win streaks necessarily predict a higher chance of winning?**
-Win streaks are a top 15 contributing factor but fall short of top 5.
 
 
-## Future Analysis & What We Would Do Differently:
+
+## Future Analysis & What We Would Do Differently
 - Test a wider variety of machine learning models for best results
   - KNN
   - Decision Tree
