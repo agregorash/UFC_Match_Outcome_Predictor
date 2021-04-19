@@ -159,7 +159,7 @@ Win streaks are a top 15 contributing factor but fall short of top 5.
 
 
 ## Future Analysis & What We Would Do Differently:
-1. Test a wider variety of models
+- Test a wider variety of models
  - KNN
  - Decision Tree
 2. Test current variables to find correlation to betting payouts
