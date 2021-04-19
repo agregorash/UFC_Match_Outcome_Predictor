@@ -1,8 +1,6 @@
 # UFC Match Outcome Predictor
 
-
 ## Overview
-
 Gambling and "The Fight Game" have always gone hand in hand.  There are countless analysts that make a living off of predicting fight outcomes based on the eye test or on data that has no proven correlation to actual wins. Even worse, the casual fan is typically basing their predictions on the most basic statistics provided by the broadcast during the "tale of the tape" introduction, i.e. heights, weight, record, rank, ect.
 
 ![tale_of_tape.jpg](https://github.com/agregorash/final_project/blob/main/Resources/tale_of_tape.jpg)
@@ -28,7 +26,6 @@ DISCLAIMER: This analysis was formed for educational purposes and should not be 
 ![image_1](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_1.png)
 
 ## Resources
-
 Through a Kaggle search we identified a robust dataset containing 137 variables pertaining to 4,566 fight records dating from 3/21/2010- 2/6/2021. 
 
 **- Data Sources:** [most-recent-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/most-recent-event.csv), [resources-master.csv](https://github.com/agregorash/final_project/blob/main/Resources/ufc-master.csv), [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv)
@@ -53,7 +50,6 @@ Exploring the data, we found that not all data is usable in its original state. 
 *It can be concluded that Red Fighters have a higher (58.6%) chance to win, while Blue Fighters have a lower (41.4%) chance to win. Thus, fighting on the red corner offers a 17% higher chance of winning alone.*
 
 #### Machine Learning
-
 - Description of data preprocessing 
 - Description of feature engineering and the feature selection, including the team's decision-making process 
 - Description of how data was split into training and testing sets 
@@ -70,34 +66,22 @@ We then set out to create a model that would perform better than our baseline mo
 
 For our improved model we decided to compare the results between a [Random Forest classifier and a Deep Neural Network](https://github.com/agregorash/final_project/blob/main/ML/ufc_RF_vs_NN.ipynb), because we were looking to classify winners with a very large dataset.  We tinkered with different train/test splits but results were best with a standard 25% test split.  The RF Classifier resulted in 78% accuracy while the Deep NN resulted in 77.93% accuracy. Due to the almost identical score, we have decided to choose the Random Forest Classifier, because it is the more simple model.
 
-Find the Confusion Matrix for the RF Classifier below:
-
-![cm.PNG](https://github.com/agregorash/final_project/blob/main/Resources/cm.PNG)
-
-The prediction results were as follows; 310 True Positives, 148 False Positives, 105 False Negatives, and 579 True Negatives.  The model is more accurate at predicting red corner fighters, or '1', as all related measures scored higher than those for blue corner fighters, or '0'.
-
-
 In order to ensure that our Random Forest Model is not overfit, the model is tested against unseen data- the 11 upcoming fights in the [upcoming-event.csv](https://github.com/agregorash/final_project/blob/main/Resources/upcoming-event.csv) file.  Results can be seen in the  [RF_upcoming.ipynb](https://github.com/agregorash/final_project/blob/main/ML/RF_upcoming.ipynb) file. The upcoming fights were put through the data preprocessing algorithms, previously unknown results were manually entered, and fed into the Random Forest Classifier which was trained on the initial data.  The model predicted results from the unseen dataset with 72% accuracy, which is slightly lower than the 75% accuracy target, but with such a small sample size we can determine the model is not overfit.
-
-
 
 ![image_2](https://github.com/agregorash/final_project/blob/priis/x/seg2/image_2.png)
 
 #### Database
-
 - In Visual Studio Code, we used the SQLalchemy library within Python to create a Postgres database [engine](https://github.com/agregorash/final_project/commit/5226eb402790633a7b0fd2d98c887178e139bd60), where we can make connections and create queries within PGAdmin. 
 - From this database we created two tables in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py), which focuses on biometric factors, and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py), which highlights fight metrics and statistics. 
 - For comparison of data of different fighter statistics, these two tables (Original and Master) are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices, and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as [fighter comparisons](https://github.com/agregorash/final_project/blob/main/Resources/comparison.csv).
 
+## Visualizations and Final Results
+Based on our initial model, the Dummy Classifier, the top 25 variables that carry the strongest correlation to winning can be visualized in the below treemap, where you can see the strongest (also the most dense in color) at the top left and the weakest on the bottom right. (Please note: you can interact by hovering over each block to find the the definition of each variable and its correlation metric in the Tableau Dashboard.)
 
-#### Visualization and Final Results 
-Through Google Slides, you will find our final presentation.
-[Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
+![Top 25 Tree Map](https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Top%2025%20Tree%20Map.png)
 
-Through Tableau Public, you will find a summary of our results, answering the 5 questions we sought to answer from the inception of this project. 
-[Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins)
-
-#### Answers to the Questions we hope to answer with data:
+### Answers to the "Questions we hope to answer with data"
+Again, based on our intial model, the Dummy Classifier, the following can be concluded:
 
 **1. What are the top 5 fighter metrics that contribute to winning a UFC match?**
 * Average number of knockdowns per fight
@@ -106,7 +90,30 @@ Through Tableau Public, you will find a summary of our results, answering the 5 
 * Payout:  The fighter that has the established higher financial incentive or payout for winning 
 * Average number of guard passes in a fight:  On the ground which the fighter that has a statistically better chance at entering a more dominant position (normally accomplished using wrestling or brazilian jiu jitsu techniques)
 
-##### Top variables correlated to wins:
+![Top 5 Bar Graph](https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Top%205%20Bar%20Graph.png)
+
+**2. Which of the fighter metrics carry more weight than the others?**
+Average number of knockdowns per fight:  This fighter is known for statistically knocking down his opponent the most using significant strikes.
+
+**3. How much do biometric physical factors, i.e. age, height, weight, affect the outcome of the match?**
+Since significant strikes are the 2nd most important contributing factor a fighter's reach benefits his ability to deal these significant strikes from a distance
+
+**4. Does having a higher rank predict the outcome?**
+Having a higher rank does increase the betting odd which is the 3rd significant factor to predict the outcome.
+
+**5. Do the number of win streaks necessarily predict a higher chance of winning?**
+Win streaks are a top 15 contributing factor but fall short of top 5.
+
+
+For our improved model we decided to compare the results between a [Random Forest classifier and a Deep Neural Network](https://github.com/agregorash/final_project/blob/main/ML/ufc_RF_vs_NN.ipynb), because we were looking to classify winners with a very large dataset.  We tinkered with different train/test splits but results were best with a standard 25% test split.  The RF Classifier resulted in 78% accuracy while the Deep NN resulted in 77.93% accuracy. Due to the almost identical score, we have decided to choose the Random Forest Classifier, because it is the more simple model.
+
+
+#### Random Forest Classifier Outcomes
+After building our improved model, the Random Forest Classifier, we were able to reach increase our accuracy and gather more precise variables that correlate to winning a UFC match. 
+
+![cm.PNG](https://github.com/agregorash/final_project/blob/main/Resources/cm.PNG)
+
+##### New Top Variables That Correlate To A Win:
 
 ```
 [(0.09371278924756822, 'sig_str_landed_bout_diff'),
@@ -150,20 +157,12 @@ Through Tableau Public, you will find a summary of our results, answering the 5 
  (0.0, 'avg_TD_pct_diff')]
 ```
 
-**2. Which of the fighter metrics carry more weight than the others?**
-Average number of knockdowns per fight:  This fighter is known for statistically knocking down his opponent the most using significant strikes.
+### Final Presentation
+Through [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1), you cab view our final presentation.
 
-**3. How much do biometric physical factors, i.e. age, height, weight, affect the outcome of the match?**
-Since significant strikes are the 2nd most important contributing factor a fighter's reach benefits his ability to deal these significant strikes from a distance
+Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins), you will find our dashboard and supporting visuals to help answer our intial probing questions. 
 
-**4. Does having a higher rank predict the outcome?**
-Having a higher rank does increase the betting odd which is the 3rd significant factor to predict the outcome.
-
-**5. Do the number of win streaks necessarily predict a higher chance of winning?**
-Win streaks are a top 15 contributing factor but fall short of top 5.
-
-
-## Future Analysis & What We Would Do Differently:
+## Future Analysis & What We Would Do Differently
 - Test a wider variety of machine learning models for best results
   - KNN
   - Decision Tree
