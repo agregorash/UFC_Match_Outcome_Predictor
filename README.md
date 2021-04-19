@@ -163,7 +163,7 @@ After building our improved model, the Random Forest Classifier, we were able to
 ```
 
 ### Final Presentation
-Through [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1), you cab view our final presentation.
+Through [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1), you can view our final presentation.
 
 Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins), you will find our dashboard and supporting visuals to help answer our intial probing questions. 
 
