@@ -104,16 +104,12 @@ Having a higher rank does increase the betting odd which is the 3rd significant 
 **5. Do the number of win streaks necessarily predict a higher chance of winning?**
 Win streaks are a top 15 contributing factor but fall short of top 5.
 
-
-For our improved model we decided to compare the results between a [Random Forest classifier and a Deep Neural Network](https://github.com/agregorash/final_project/blob/main/ML/ufc_RF_vs_NN.ipynb), because we were looking to classify winners with a very large dataset.  We tinkered with different train/test splits but results were best with a standard 25% test split.  The RF Classifier resulted in 78% accuracy while the Deep NN resulted in 77.93% accuracy. Due to the almost identical score, we have decided to choose the Random Forest Classifier, because it is the more simple model.
-
-
-#### Random Forest Classifier Outcomes
+### Random Forest Classifier Outcomes
 After building our improved model, the Random Forest Classifier, we were able to reach increase our accuracy and gather more precise variables that correlate to winning a UFC match. 
 
 ![cm.PNG](https://github.com/agregorash/final_project/blob/main/Resources/cm.PNG)
 
-##### New Top Variables That Correlate To A Win:
+### New Top Variables That Correlate To A Win:
 
 ```
 [(0.09371278924756822, 'sig_str_landed_bout_diff'),
@@ -166,9 +162,7 @@ Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhom
 - Test a wider variety of machine learning models for best results
   - KNN
   - Decision Tree
-  - Use statistical analysis in tandem with supervised machine learning
 - Test current variables to find correlation to betting payouts
 - Instead of cleaning and breaking our largest kaggle data file into two separate files, we could have pulled different CSV's from an alternate source
   - Create a fighter database in order to compare potential future matchups
   - Store data in JSON structure
-
