@@ -159,10 +159,10 @@ Win streaks are a top 15 contributing factor but fall short of top 5.
 
 
 ## Future Analysis & What We Would Do Differently:
-* Test a wider variety of models
-** KNN
-** Decision Tree
-* Instead of cleaning and breaking our largest kaggle data file into two separate files, we could have pulled different CSV's from an alternate source
-* Test variable correlations to betting payouts
-* Create a fighter database in order to compare potential future matchups
-** Store data in JSON structure
+1. Test a wider variety of models
+ * KNN
+ * Decision Tree
+2. Test current variables to find correlation to betting payouts
+3. Instead of cleaning and breaking our largest kaggle data file into two separate files, we could have pulled different CSV's from an alternate source
+ * Create a fighter database in order to compare potential future matchups
+ * Store data in JSON structure
