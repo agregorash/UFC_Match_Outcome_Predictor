@@ -1,6 +1,5 @@
 # UFC Match Outcome Predictor
 
-
 ## Overview
 
 Gambling and "The Fight Game" have always gone hand in hand.  There are countless analysts that make a living off of predicting fight outcomes based on the eye test or on data that has no proven correlation to actual wins. Even worse, the casual fan is typically basing their predictions on the most basic statistics provided by the broadcast during the "tale of the tape" introduction, i.e. heights, weight, record, rank, ect.
@@ -85,7 +84,7 @@ Based on our initial model, the Dummy Classifier, the top 25 variables that carr
 
 ![Top 25 Tree Map](https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Top%2025%20Tree%20Map.png)
 
-#### Answers to the "Questions we hope to answer with data"
+### Answers to the "Questions we hope to answer with data"
 Again, based on our intial model, the Dummy Classifier, the following can be concluded:
 
 **1. What are the top 5 fighter metrics that contribute to winning a UFC match?**
@@ -95,7 +94,7 @@ Again, based on our intial model, the Dummy Classifier, the following can be con
 * Payout:  The fighter that has the established higher financial incentive or payout for winning 
 * Average number of guard passes in a fight:  On the ground which the fighter that has a statistically better chance at entering a more dominant position (normally accomplished using wrestling or brazilian jiu jitsu techniques)
 
-![Top 5 Bar Graph] (https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Top%205%20Bar%20Graph.png)
+![Top 5 Bar Graph](https://github.com/agregorash/final_project/blob/main/Tableau%20Viz/Viz/Top%205%20Bar%20Graph.png)
 
 **2. Which of the fighter metrics carry more weight than the others?**
 Average number of knockdowns per fight:  This fighter is known for statistically knocking down his opponent the most using significant strikes.
@@ -109,7 +108,7 @@ Having a higher rank does increase the betting odd which is the 3rd significant 
 **5. Do the number of win streaks necessarily predict a higher chance of winning?**
 Win streaks are a top 15 contributing factor but fall short of top 5.
 
-#### Final Presentation
+### Final Presentation
 Through Google Slides, you will find our final presentation.
 [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
 
