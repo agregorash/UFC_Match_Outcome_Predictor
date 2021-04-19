@@ -177,4 +177,4 @@ Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhom
   - Create a fighter database in order to compare potential future matchups
   - Store data in JSON structure
 
-##### Model not intented to encourage gambling for it is for entertainement purposes only and we are not held responsible for losses.
+##### Model not intented to encourage gambling for it is for entertainment purposes only and we are not held responsible for losses.
