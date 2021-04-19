@@ -109,11 +109,9 @@ Having a higher rank does increase the betting odd which is the 3rd significant 
 Win streaks are a top 15 contributing factor but fall short of top 5.
 
 ### Final Presentation
-Through Google Slides, you will find our final presentation.
-[Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1)
+Through [Google Slides](https://docs.google.com/presentation/d/1adOQyTwok8l9FzuhbHO4eq4SgR4OOhwt6lQiFTTLyZo/edit?ts=606faa2c#slide=id.gcf3e7e23ac_0_1), you cab view our final presentation.
 
-Through Tableau Public, you will find a summary of our results and visuals to support the 5 questions we sought to answer from the inception of this project. 
-[Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins)
+Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins), you will find our dashboard and supporting visuals to help answer our intial probing questions. 
 
 
 ##### Random Forest Classifier Outcomes
