@@ -166,7 +166,9 @@ Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhom
 - Test a wider variety of machine learning models for best results
   - KNN
   - Decision Tree
+  - Use statistical analysis in tandem with supervised machine learning
 - Test current variables to find correlation to betting payouts
 - Instead of cleaning and breaking our largest kaggle data file into two separate files, we could have pulled different CSV's from an alternate source
   - Create a fighter database in order to compare potential future matchups
   - Store data in JSON structure
+
