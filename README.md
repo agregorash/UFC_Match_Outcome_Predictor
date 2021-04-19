@@ -176,3 +176,5 @@ Through [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhom
 - Instead of cleaning and breaking our largest kaggle data file into two separate files, we could have pulled different CSV's from an alternate source
   - Create a fighter database in order to compare potential future matchups
   - Store data in JSON structure
+
+####### Model not intented to encourage gambling for it is for entertainement purposes only and we are not held responsible for losses.
