@@ -13,7 +13,7 @@ With the power of data, this analysis will uncover the top variables correlated 
 
 DISCLAIMER: This analysis was formed for educational purposes and should not be used for gambling or financial gain.
 
-## Questions we hope to answer with data:
+### Questions we hope to answer with data:
 
 **1. What are the top 5 fighter metrics that contribute to winning a UFC match?**
 
@@ -80,7 +80,7 @@ In order to ensure that our Random Forest Model is not overfit, the model is tes
 - From this database we created two tables in PGAdmin named [Original](https://github.com/agregorash/final_project/blob/main/Database/originaltable.py), which focuses on biometric factors, and [Master](https://github.com/agregorash/final_project/blob/main/Database/mastertable.py), which highlights fight metrics and statistics. 
 - For comparison of data of different fighter statistics, these two tables (Original and Master) are left [joined](https://github.com/agregorash/final_project/commit/ea68f955559de8223ca18dcfeb0d98d8cfb6d0ad) on their indices, and their joined [table](https://github.com/agregorash/final_project/blob/main/Database/Seg2Data/ViewMasterTableOriginalTableJoin.PNG) is viewed in PGAdmin as [fighter comparisons](https://github.com/agregorash/final_project/blob/main/Resources/comparison.csv).
 
-#### Results
+## Results
 
 ##### Random Forest Classifier Outcomes
 
@@ -136,7 +136,7 @@ Through Google Slides, you will find our final presentation.
 Through Tableau Public, you will find a summary of our results, answering the 5 questions we sought to answer from the inception of this project. 
 [Tableau Public](https://public.tableau.com/profile/priti.islam#!/vizhome/UFC_StoryV4/MapvsWins)
 
-### Answers to the Questions we hope to answer with data:
+#### Answers to the Questions we hope to answer with data:
 
 **1. What are the top 5 fighter metrics that contribute to winning a UFC match?**
 * Average number of knockdowns per fight
@@ -158,13 +158,11 @@ Having a higher rank does increase the betting odd which is the 3rd significant 
 Win streaks are a top 15 contributing factor but fall short of top 5.
 
 
-# Future Analysis & What we would do differently:
-
-## Test a wider variety of models
-* KNN
-* Decision Tree
-## Database
+## Future Analysis & What We Would Do Differently:
+* Test a wider variety of models
+** KNN
+** Decision Tree
+* Instead of cleaning and breaking our largest kaggle data file into two separate files, we could have pulled different CSV's from an alternate source
+* Test variable correlations to betting payouts
 * Create a fighter database in order to compare potential future matchups
-* Instead of cleaning and breaking our largest kaggle data file into two separate files, we could have pulled different CSV's from an alternate source.
-* Store data in JSON structure
-## Test variable correlations to betting payouts
+** Store data in JSON structure
