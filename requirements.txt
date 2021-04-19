@@ -1,0 +1,6 @@
+Python==3.7.1
+Pandas==1.0.3
+Numpy==1.18.1
+Scikit==0.22.2
+
+sqlalchemy
